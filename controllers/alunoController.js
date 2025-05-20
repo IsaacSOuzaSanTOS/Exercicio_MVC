@@ -8,7 +8,6 @@ exports.index = async (req, res) => {
 };
 
 exports.store = async (req, res) => {
-  console.log(req.body)
   await Aluno.create(req.body);
   res.redirect('/alunos');
 };

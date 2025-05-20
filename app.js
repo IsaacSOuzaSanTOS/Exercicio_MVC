@@ -28,3 +28,5 @@ app.listen(PORT, () => {
 
 const cursosRoutes = require('./routes/cursos');
 app.use('/cursos', cursosRoutes);
+
+app.use('/professores', professoresRoutes);
